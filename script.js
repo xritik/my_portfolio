@@ -18,9 +18,9 @@
 // 4. Get your PUBLIC_KEY from Account → API Keys
 // 5. Replace the placeholders below:
 
-const EMAILJS_PUBLIC_KEY  = 'YOUR_PUBLIC_KEY';    // ← Replace
-const EMAILJS_SERVICE_ID  = 'YOUR_SERVICE_ID';    // ← Replace
-const EMAILJS_TEMPLATE_ID = 'YOUR_TEMPLATE_ID';   // ← Replace
+const EMAILJS_PUBLIC_KEY  = 'ThOPiwsR8Ack3sNDK';    // ← Replace
+const EMAILJS_SERVICE_ID  = 'service_hs28v5o';    // ← Replace
+const EMAILJS_TEMPLATE_ID = 'templete_onyj93v';   // ← Replace
 
 // ─── Init EmailJS ────────────────────────────────
 (function () {
