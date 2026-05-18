@@ -20,7 +20,7 @@
 
 const EMAILJS_PUBLIC_KEY  = 'ThOPiwsR8Ack3sNDK';    // ← Replace
 const EMAILJS_SERVICE_ID  = 'service_hs28v5o';    // ← Replace
-const EMAILJS_TEMPLATE_ID = 'templete_onyj93v';   // ← Replace
+const EMAILJS_TEMPLATE_ID = 'template_onyj93v';   // ← Replace
 
 // ─── Init EmailJS ────────────────────────────────
 (function () {
@@ -230,20 +230,6 @@ form.addEventListener('submit', async (e) => {
     }
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
         showFormMsg('Please enter a valid email address.', 'error');
-        return;
-    }
-
-    // Check if EmailJS is configured
-    if (EMAILJS_PUBLIC_KEY === 'ThOPiwsR8Ack3sNDK') {
-        // Demo mode: show success simulation + open mailto fallback
-        setLoading(true);
-        await delay(1200);
-        setLoading(false);
-        const body = encodeURIComponent(
-            `Name: ${name}\nEmail: ${email}\nPhone: ${phone || 'N/A'}\n\nMessage:\n${message}`
-        );
-        window.location.href = `mailto:tech.ritiksingh@gmail.com?subject=${encodeURIComponent(subject)}&body=${body}`;
-        showFormMsg('📧 Opening your email client...', 'success');
         return;
     }
 
