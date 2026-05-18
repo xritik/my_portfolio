@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ritik Singh — Full Stack Developer</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <a href="#" class="logo">RS<span class="dot">.</span></a>
+
+        <nav class="navbar" id="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#portfolio">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+            <!-- Theme Toggle -->
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <span class="toggle-track">
+                    <span class="toggle-thumb">
+                        <i class='bx bx-moon moon-icon'></i>
+                        <i class='bx bx-sun sun-icon'></i>
+                    </span>
+                </span>
+            </button>
+            <i class='bx bx-menu' id="menu-icon"></i>
+        </div>
+    </header>
+
+    <!-- HOME -->
+    <section class="home" id="home">
+        <div class="home-bg-grid"></div>
+        <div class="home-content">
+            <div class="tag-pill">
+                <span class="pulse-dot"></span>
+                Available for opportunities
+            </div>
+            <h1>Ritik <br><span class="gradient-text">Singh</span></h1>
+            <h2 class="typewriter-wrap">I build <span class="typed-text" id="typedText"></span><span class="cursor-blink">|</span></h2>
+            <p>Full Stack Developer crafting modern, scalable web applications with the MERN stack, cloud infrastructure, and AI integrations.</p>
+            <div class="home-btns">
+                <a href="#contact" class="btn btn-primary">
+                    <i class='bx bx-send'></i> Hire Me
+                </a>
+                <a href="#" class="btn btn-outline" id="downloadCV" onclick="handleCVDownload(event)">
+                    <i class='bx bx-download'></i> Download CV
+                </a>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/xritik" target="_blank" aria-label="GitHub">
+                    <i class='bx bxl-github'></i>
+                </a>
+                <a href="https://www.linkedin.com/in/xritik/" target="_blank" aria-label="LinkedIn">
+                    <i class='bx bxl-linkedin'></i>
+                </a>
+                <a href="#" aria-label="Twitter">
+                    <i class='bx bxl-twitter'></i>
+                </a>
+                <a href="#" aria-label="Instagram">
+                    <i class='bx bxl-instagram-alt'></i>
+                </a>
+            </div>
+        </div>
+        <div class="home-visual">
+            <div class="avatar-ring"></div>
+            <div class="avatar-card">
+                <div class="avatar-img">
+                    <img src="imgs/my-pic.png" alt="Ritik Singh" onerror="this.style.display='none'; this.parentElement.classList.add('no-img')">
+                    <div class="avatar-fallback">RS</div>
+                </div>
+                <div class="floating-badge badge-1">
+                    <i class='bx bxl-react'></i> React
+                </div>
+                <div class="floating-badge badge-2">
+                    <i class='bx bxl-nodejs'></i> Node.js
+                </div>
+                <div class="floating-badge badge-3">
+                    <i class='bx bxl-aws'></i> AWS
+                </div>
+                <div class="floating-badge badge-4">
+                    <span>🤖</span> AI/ML
+                </div>
+            </div>
+            <div class="stats-row">
+                <div class="stat-item">
+                    <span class="stat-num">15+</span>
+                    <span class="stat-label">Projects</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-num">26+</span>
+                    <span class="stat-label">Technologies</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-num">2+</span>
+                    <span class="stat-label">Years Exp.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+        <div class="about-left reveal-left">
+            <div class="about-image-wrap">
+                <div class="about-img-bg"></div>
+                <img src="imgs/my-pic.png" alt="Ritik Singh" onerror="this.style.display='none'">
+                <div class="exp-badge">
+                    <span class="exp-num">2+</span>
+                    <span class="exp-text">Years of<br>Experience</span>
+                </div>
+            </div>
+        </div>
+        <div class="about-right reveal-right">
+            <p class="section-label">WHO AM I</p>
+            <h2 class="section-title">About <span>Me</span></h2>
+            <h3 class="about-role">Full Stack Developer & Cloud Enthusiast</h3>
+            <p class="about-text">I'm a passionate Full Stack Developer focused on building modern, scalable, and real-time web applications using the MERN stack. I have hands-on experience with React.js, Node.js, MongoDB, Express.js, AWS, Docker, Linux, and real-time technologies like Socket.io and WebSockets.</p>
+            <p class="about-text">I've worked on multiplayer quiz platforms, real-time chat apps, DNS automation systems, AI-powered RAG applications, and cloud-integrated solutions. I'm continuously learning AI, SRE, cloud infrastructure, and DevOps practices.</p>
+            <div class="about-highlights">
+                <div class="highlight-item">
+                    <i class='bx bx-check-circle'></i>
+                    <span>MERN Stack Expert</span>
+                </div>
+                <div class="highlight-item">
+                    <i class='bx bx-check-circle'></i>
+                    <span>Cloud & DevOps</span>
+                </div>
+                <div class="highlight-item">
+                    <i class='bx bx-check-circle'></i>
+                    <span>AI/ML Integration</span>
+                </div>
+                <div class="highlight-item">
+                    <i class='bx bx-check-circle'></i>
+                    <span>Real-time Systems</span>
+                </div>
+            </div>
+            <a href="#contact" class="btn btn-primary">Let's Talk <i class='bx bx-right-arrow-alt'></i></a>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="skills" id="skills">
+        <div class="section-header reveal-top">
+            <p class="section-label">WHAT I WORK WITH</p>
+            <h2 class="section-title">Tech <span>Stack</span></h2>
+        </div>
+
+        <div class="skills-categories">
+            <div class="skill-category reveal-bottom">
+                <h4><i class='bx bx-code-alt'></i> Frontend</h4>
+                <div class="skill-chips">
+                    <span class="chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" onerror="this.style.display='none'">HTML5</span>
+                    <span class="chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" onerror="this.style.display='none'">CSS3</span>
+                    <span class="chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" onerror="this.style.display='none'">JavaScript</span>
+                    <span class="chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" onerror="this.style.display='none'">React.js</span>
+                </div>
+            </div>
+            <div class="skill-category reveal-bottom">
+                <h4><i class='bx bx-server'></i> Backend</h4>
+                <div class="skill-chips">
+                    <span class="chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" onerror="this.style.display='none'">Node.js</span>
+                    <span class="chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" onerror="this.style.display='none'">Express.js</span>
+                    <span class="chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" onerror="this.style.display='none'">Python</span>
+                    <span class="chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" onerror="this.style.display='none'">Java</span>
+                </div>
+            </div>
+            <div class="skill-category reveal-bottom">
+                <h4><i class='bx bx-data'></i> Database & AI</h4>
+                <div class="skill-chips">
+                    <span class="chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" onerror="this.style.display='none'">MongoDB</span>
+                    <span class="chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" onerror="this.style.display='none'">MySQL</span>
+                    <span class="chip">🔷 FAISS</span>
+                    <span class="chip">🌲 Pinecone</span>
+                    <span class="chip">🗄️ ChromaDB</span>
+                    <span class="chip">🤖 OpenAI API</span>
+                </div>
+            </div>
+            <div class="skill-category reveal-bottom">
+                <h4><i class='bx bxl-aws'></i> DevOps & Cloud</h4>
+                <div class="skill-chips">
+                    <span class="chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg" onerror="this.style.display='none'">AWS</span>
+                    <span class="chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" onerror="this.style.display='none'">Docker</span>
+                    <span class="chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" onerror="this.style.display='none'">Terraform</span>
+                    <span class="chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" onerror="this.style.display='none'">Linux</span>
+                    <span class="chip">⚡ NGINX</span>
+                    <span class="chip">☁️ Cloudflare</span>
+                </div>
+            </div>
+            <div class="skill-category reveal-bottom">
+                <h4><i class='bx bx-transfer'></i> Real-time & Tools</h4>
+                <div class="skill-chips">
+                    <span class="chip">🔌 Socket.io</span>
+                    <span class="chip">🔗 WebSocket</span>
+                    <span class="chip">🔑 JWT</span>
+                    <span class="chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" onerror="this.style.display='none'">GitHub</span>
+                    <span class="chip">📮 Postman</span>
+                    <span class="chip">🌐 Apache</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section class="portfolio" id="portfolio">
+        <div class="section-header reveal-top">
+            <p class="section-label">WHAT I'VE BUILT</p>
+            <h2 class="section-title">Featured <span>Projects</span></h2>
+        </div>
+        <div class="portfolio-grid">
+
+            <div class="project-card reveal-bottom featured">
+                <div class="project-img">
+                    <img src="imgs/iquiz-pic.jpg" alt="iQuiz Live App" onerror="this.src=''; this.parentElement.classList.add('no-img')">
+                    <div class="project-img-placeholder"><i class='bx bx-game'></i></div>
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span class="tag">React</span><span class="tag">Node.js</span><span class="tag">Socket.io</span><span class="tag">MongoDB</span>
+                    </div>
+                    <h3>iQuiz Live App</h3>
+                    <p>A Kahoot-like multiplayer quiz platform with live hosting, PIN-based joining, real-time scoring, and authentication. Built for interactive classroom and event experiences.</p>
+                    <div class="project-links">
+                        <a href="#" class="project-link"><i class='bx bx-link-external'></i> Live Demo</a>
+                        <a href="https://github.com/xritik" target="_blank" class="project-link"><i class='bx bxl-github'></i> Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card reveal-bottom">
+                <div class="project-img">
+                    <img src="imgs/portfolioimg2.jpg" alt="Real-time Chat App" onerror="this.src=''; this.parentElement.classList.add('no-img')">
+                    <div class="project-img-placeholder"><i class='bx bx-chat'></i></div>
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span class="tag">MERN</span><span class="tag">Socket.io</span><span class="tag">JWT</span>
+                    </div>
+                    <h3>Real-time Chat App</h3>
+                    <p>MERN-based one-to-one chatting application with Socket.io, authentication, online status indicators, and instant messaging.</p>
+                    <div class="project-links">
+                        <a href="#" class="project-link"><i class='bx bx-link-external'></i> Live Demo</a>
+                        <a href="https://github.com/xritik" target="_blank" class="project-link"><i class='bx bxl-github'></i> Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card reveal-bottom">
+                <div class="project-img">
+                    <img src="imgs/cloud-dns-automation.jpg" alt="Cloudflare DNS Automation" onerror="this.src=''; this.parentElement.classList.add('no-img')">
+                    <div class="project-img-placeholder"><i class='bx bx-cloud'></i></div>
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span class="tag">AWS</span><span class="tag">Cloudflare</span><span class="tag">Node.js</span>
+                    </div>
+                    <h3>Cloudflare DNS Automation</h3>
+                    <p>Automated DNS updater that integrates AWS EC2 public IP changes directly with Cloudflare DNS records — zero manual intervention.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/xritik" target="_blank" class="project-link"><i class='bx bxl-github'></i> Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card reveal-bottom">
+                <div class="project-img">
+                    <img src="imgs/pdf-generator.jpg" alt="Invoice PDF Generator" onerror="this.src=''; this.parentElement.classList.add('no-img')">
+                    <div class="project-img-placeholder"><i class='bx bx-file'></i></div>
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span class="tag">Node.js</span><span class="tag">PDF</span><span class="tag">Express</span>
+                    </div>
+                    <h3>Invoice PDF Generator</h3>
+                    <p>Node.js-based invoice generation system that dynamically creates professional PDF invoices with downloadable functionality.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/xritik" target="_blank" class="project-link"><i class='bx bxl-github'></i> Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card reveal-bottom">
+                <div class="project-img">
+                    <img src="imgs/rag-application.png" alt="AI RAG Application" onerror="this.src=''; this.parentElement.classList.add('no-img')">
+                    <div class="project-img-placeholder"><i class='bx bx-brain'></i></div>
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span class="tag">Python</span><span class="tag">OpenAI</span><span class="tag">FAISS</span><span class="tag">LangChain</span>
+                    </div>
+                    <h3>AI-Powered RAG Application</h3>
+                    <p>Retrieval-Augmented Generation system using embeddings, chunking, vector search, and AI-powered contextual responses for intelligent document Q&A.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/xritik" target="_blank" class="project-link"><i class='bx bxl-github'></i> Code</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+        <div class="section-header reveal-top">
+            <p class="section-label">GET IN TOUCH</p>
+            <h2 class="section-title">Contact <span>Me</span></h2>
+        </div>
+        <div class="contact-wrapper">
+            <div class="contact-info reveal-left">
+                <h3>Let's work together</h3>
+                <p>Have a project in mind or just want to say hello? I'd love to hear from you. Fill out the form and I'll get back to you as soon as possible.</p>
+                <div class="contact-detail">
+                    <div class="contact-icon"><i class='bx bx-envelope'></i></div>
+                    <div>
+                        <span>Email</span>
+                        <a href="mailto:tech.ritiksingh@gmail.com">tech.ritiksingh@gmail.com</a>
+                    </div>
+                </div>
+                <div class="contact-detail">
+                    <div class="contact-icon"><i class='bx bxl-github'></i></div>
+                    <div>
+                        <span>GitHub</span>
+                        <a href="https://github.com/xritik" target="_blank">github.com/xritik</a>
+                    </div>
+                </div>
+                <div class="contact-detail">
+                    <div class="contact-icon"><i class='bx bxl-linkedin'></i></div>
+                    <div>
+                        <span>LinkedIn</span>
+                        <a href="https://www.linkedin.com/in/xritik/" target="_blank">linkedin.com/in/xritik</a>
+                    </div>
+                </div>
+            </div>
+            <form class="contact-form reveal-right" id="contactForm" novalidate>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" id="name" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Email Address</label>
+                        <input type="email" id="email" placeholder="john@example.com" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Phone (optional)</label>
+                        <input type="tel" id="phone" placeholder="+91 00000 00000">
+                    </div>
+                    <div class="form-group">
+                        <label>Subject</label>
+                        <input type="text" id="subject" placeholder="Project Inquiry" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Message</label>
+                    <textarea id="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+                    <span class="btn-text"><i class='bx bx-send'></i> Send Message</span>
+                    <span class="btn-loading" style="display:none"><i class='bx bx-loader-alt bx-spin'></i> Sending...</span>
+                </button>
+                <div id="formMsg" class="form-message"></div>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>Designed & Built by <span>Ritik Singh</span> · © 2024 All Rights Reserved</p>
+        <a href="#home" class="back-top" aria-label="Back to top">
+            <i class='bx bx-chevron-up'></i>
+        </a>
+    </footer>
+
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <!-- Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
+</body>
+</html>
