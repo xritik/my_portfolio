@@ -239,13 +239,11 @@ form.addEventListener('submit', async (e) => {
         setLoading(true);
         await delay(1200);
         setLoading(false);
-        showFormMsg('⚠️ EmailJS not configured yet. Opening your email client as fallback...', 'error');
-        setTimeout(() => {
-            const body = encodeURIComponent(
-                `Name: ${name}\nEmail: ${email}\nPhone: ${phone || 'N/A'}\n\nMessage:\n${message}`
-            );
-            window.location.href = `mailto:tech.ritiksingh@gmail.com?subject=${encodeURIComponent(subject)}&body=${body}`;
-        }, 1500);
+        const body = encodeURIComponent(
+            `Name: ${name}\nEmail: ${email}\nPhone: ${phone || 'N/A'}\n\nMessage:\n${message}`
+        );
+        window.location.href = `mailto:tech.ritiksingh@gmail.com?subject=${encodeURIComponent(subject)}&body=${body}`;
+        showFormMsg('📧 Opening your email client...', 'success');
         return;
     }
 
