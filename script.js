@@ -234,7 +234,7 @@ form.addEventListener('submit', async (e) => {
     }
 
     // Check if EmailJS is configured
-    if (EMAILJS_PUBLIC_KEY === 'YOUR_PUBLIC_KEY') {
+    if (EMAILJS_PUBLIC_KEY === 'ThOPiwsR8Ack3sNDK') {
         // Demo mode: show success simulation + open mailto fallback
         setLoading(true);
         await delay(1200);
