@@ -82,7 +82,7 @@ const phrases = [
     'Full Stack Apps',
     'Cloud Solutions',
     'Real-time Systems',
-    'AI-Powered Tools',
+    'Gen-AI Powered Tools',
     'DevOps Pipelines'
 ];
 
